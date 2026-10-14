@@ -1,0 +1,118 @@
+:root {
+  --green: #0F6B5F;
+  --orange: #F2A93B;
+  --dark: #16302B;
+  --bg: #F4F7F5;
+  --line: #E6EFEC;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: .8rem;
+  color: var(--dark);
+  background: var(--line);
+}
+
+.ticket {
+  border: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 .75rem 2rem rgba(15, 107, 95, .22);
+}
+.ticket-head {
+  background: var(--green);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1.25rem 1.5rem;
+}
+
+.form-label, legend {
+  float: none;
+  width: auto;
+  margin-bottom: .25rem;
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.form-control, .form-select {
+  font-size: .8rem;
+  background-color: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: .75rem;
+}
+.form-control:focus, .form-select:focus {
+  background-color: var(--bg);
+  border-color: var(--green);
+  box-shadow: 0 0 0 .2rem rgba(15, 107, 95, .2);
+}
+
+.form-floating { --bs-body-bg: transparent; }
+.form-floating > .form-control { padding-top: 1.625rem; padding-bottom: .5rem; }
+.form-floating > .form-control::placeholder { color: #3d5550; opacity: 1; }
+.form-floating > .form-control ~ label {
+  transform: scale(.8) translateY(-.5rem) translateX(.15rem);
+  opacity: .65;
+}
+
+.form-check-input:checked {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+.form-check-input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 .2rem rgba(15, 107, 95, .25);
+}
+
+.trip {
+  border: 1px solid var(--green);
+  border-radius: 50rem;
+  overflow: hidden;
+}
+.trip .btn {
+  --bs-btn-color: var(--green);
+  --bs-btn-hover-color: var(--green);
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--green);
+  --bs-btn-border-width: 0;
+  border-radius: 0;
+  padding: .4rem 1.2rem;
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.input-group-text {
+  background: var(--green);
+  color: #fff;
+  border: 0;
+  border-radius: .75rem;
+  font-weight: 600;
+}
+
+.btn-find, .btn-clear {
+  border-radius: 50rem;
+  padding: .55rem 1.8rem;
+  font-size: .8rem;
+  font-weight: 700;
+}
+.btn-find {
+  --bs-btn-color: var(--dark);
+  --bs-btn-bg: var(--orange);
+  --bs-btn-border-color: var(--orange);
+  --bs-btn-hover-color: var(--dark);
+  --bs-btn-hover-bg: #e19a2b;
+  --bs-btn-hover-border-color: #e19a2b;
+  --bs-btn-active-color: var(--dark);
+  --bs-btn-active-bg: #d18c22;
+}
+.btn-clear {
+  --bs-btn-color: var(--dark);
+  --bs-btn-bg: #fff;
+  --bs-btn-border-color: var(--dark);
+  --bs-btn-hover-color: var(--dark);
+  --bs-btn-hover-bg: var(--bg);
+  --bs-btn-hover-border-color: var(--dark);
+  --bs-btn-active-color: var(--dark);
+  --bs-btn-active-bg: var(--line);
+}

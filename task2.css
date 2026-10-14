@@ -1,0 +1,42 @@
+:root { --violet: #5b21b6; --night: #1e1b4b; }
+
+body { background: #eef0f8; }
+
+.hack {
+  border: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 .75rem 2rem rgba(30, 27, 75, .18);
+}
+.hack-head {
+  background: var(--night);
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1.25rem 1.5rem;
+}
+
+.form-label, legend { float: none; width: auto; font-size: 1rem; font-weight: 600; margin-bottom: .25rem; }
+
+.form-control:focus, .form-select:focus, .form-check-input:focus {
+  border-color: var(--violet);
+  box-shadow: 0 0 0 .2rem rgba(91, 33, 182, .2);
+}
+
+.form-control:user-invalid, .form-select:user-invalid, .form-check-input:user-invalid { border-color: #dc3545; }
+.form-control:user-valid, .form-select:user-valid { border-color: #198754; }
+
+:user-invalid ~ .invalid-feedback { display: block; }
+.group:has(:user-invalid) .invalid-feedback { display: block; }
+
+.btn-hack {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--violet);
+  --bs-btn-border-color: var(--violet);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--night);
+  --bs-btn-hover-border-color: var(--night);
+  --bs-btn-active-bg: var(--night);
+  font-weight: 700;
+  padding: .7rem;
+}
